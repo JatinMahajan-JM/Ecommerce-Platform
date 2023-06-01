@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: white;
+    padding: 0 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons a {
+    font-size: 22.4px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 8px;
+}
+
+.nav-header p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.title {
+    color: black;
+    padding: 0 17.5px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    height: 70px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.sub-menu {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 71px;
+    left: 228px;
+    width: 1000px;
+    background: white;
+    height: 500px;
+    padding: 20px 15px;
+}
+
+.demo:hover + .sub-menu {
+    display: block;
+}
+
+.sub-menu:hover {
+    display: block;
+}
+
+.sub-column li {
+    font-size: 16px;
+    padding: 10px 0;
+    line-height: 1.5;
+    width: 220px;
+    margin: 0;
+}
+
+.column a{
+    color: black;
+    text-transform: uppercase;
+    width: 220px;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid black;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.blocks {
+    display: block;
+    height: 70px;
+}
+
+/* .slider-container {
+    height: 400px;
+    width: 100%;
+    background: url(../images/Slide1.jpg)no-repeat;
+    background-position: top;
+    background-size: contain;
+} */
+
+@media screen and (min-width: 1024px) {
+    .links {
+        display: flex;
+        align-items: center;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 776px){
+    .links {
+        display: none;
+    }
+
+    .nav-center {
+        height: 70px;
+    }
+
+    .menu {
+        display: block;
+        background: none;
+        border: none;
+        padding-right: 88px;
+        font-size: 25px;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 776px){
+    .links {
+        display: none;
+    }
+
+    .nav-center {
+        height: 70px;
+    }
+
+    .menu {
+        display: block;
+        background: none;
+        border: none;
+        padding-right: 52px;
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    .user {
+        display: none;
+    }
+}

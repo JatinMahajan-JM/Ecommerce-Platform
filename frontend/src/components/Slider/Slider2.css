@@ -1,0 +1,42 @@
+.container-slider {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.slide img {
+  width: 100%;
+  object-fit: cover;
+  height: fit-content;
+  object-position: top;
+}
+
+.active-anim {
+    opacity: 1;
+}
+
+.container-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 3px solid rgb(75, 73, 73);
+    margin: 0 5px;
+    background: rgb(75, 73, 73);
+  }
+  .dot.active {
+    background: #000;
+    border: black;
+  }
